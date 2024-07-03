@@ -22,31 +22,31 @@ export class CounterComponent {
     this.internalNum +=1;
   }
   constructor(){
-    console.log("2: constructor")
+    console.log("children: constructor")
   }
   ngOnInit(): void {
-    console.log("2: ngOnInit")
+    console.log("children: ngOnInit")
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log("2: ngOncChanges")
+    console.log("children: ngOncChanges")
     console.log(changes)
   }
   ngOnDestroy(): void {
-    console.log("2: ngOnDestroy")
+    console.log("children: ngOnDestroy")
   }
   ngDoCheck(){
-    console.log("2: ngDoCheck")
+    console.log("children: ngDoCheck")
   }
   ngAfterContentInit(){
-    console.log("2: ngAfterContentInit")
+    console.log("children: ngAfterContentInit")
   }
   ngAfterContentChecked(){
-    console.log("2: ngAfterContentChecked")
+    console.log("children: ngAfterContentChecked")
   }
   ngAfterViewInit(){
-    console.log("2: ngAfterViewInit")
+    console.log("children: ngAfterViewInit")
   }
   ngAfterViewChecked(){
-    console.log("2: ngAfterViewChecked")
+    console.log("children: ngAfterViewChecked")
   }
 }

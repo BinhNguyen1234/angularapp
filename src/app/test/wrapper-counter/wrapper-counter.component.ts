@@ -16,30 +16,30 @@ export class WrapperCounterComponent {
     this.num+=1;
   }
   constructor(){
-    console.log("1: constructor")
+    console.log("Parent: constructor")
   }
   ngOnInit(): void {
-    console.log("1: ngOnInit")
+    console.log("Parent: ngOnInit")
   }
   ngOnChanges(): void {
-    console.log("1: ngOnChanges")
+    console.log("Parent: ngOnChanges")
   }
   ngOnDestroy(): void {
-    console.log("1: ngOnDestroy")
+    console.log("Parent: ngOnDestroy")
   }
   ngDoCheck(){
-    console.log("1: ngDoCheck")
+    console.log("Parent: ngDoCheck")
   }
   ngAfterContentInit(){
-    console.log("1: ngAfterContentInit")
+    console.log("Parent: ngAfterContentInit")
   }
   ngAfterContentChecked(){
-    console.log("1: ngAfterContentChecked")
+    console.log("Parent: ngAfterContentChecked")
   }
   ngAfterViewInit(){
-    console.log("1: ngAfterViewInit")
+    console.log("Parent: ngAfterViewInit")
   }
   ngAfterViewChecked(){
-    console.log("1: ngAfterViewChecked")
+    console.log("Parent: ngAfterViewChecked")
   }
 }
