@@ -16,13 +16,15 @@ import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@
   styleUrl: './counter.component.css'
 })
 export class CounterComponent {
-  @Input() externalNum ?: number
+  @Input() externalNum ?: any
   internalNum:number = 0;
   changeInternalNumber(){
     this.internalNum +=1;
+    this.externalNum +=1;
   }
   constructor(){
     console.log("children: constructor")
+    this.externalNum = 1;
   }
   ngOnInit(): void {
     console.log("children: ngOnInit")

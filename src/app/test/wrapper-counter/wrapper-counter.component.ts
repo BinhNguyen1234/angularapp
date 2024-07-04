@@ -5,14 +5,16 @@ import { CounterComponent } from '../counter/counter.component';
   standalone: true,
   imports: [CounterComponent],
   template: `
-  <app-counter [externalNum]="num"></app-counter>
-  <button (click)="handleChangeExternal()"> change external</button>
+  <app-counter #testssschange [externalNum]="num"></app-counter>
+  <button  (click)="handleChangeExternal( $event,testssschange)"> change external</button>
   `,
   styleUrl: './wrapper-counter.component.css'
 })
 export class WrapperCounterComponent {
   num : number = 0
-  handleChangeExternal(){
+  handleChangeExternal($event :any,testssschange: any){
+    console.log($event)
+    console.log(testssschange)
     this.num+=1;
   }
   constructor(){
@@ -37,6 +39,7 @@ export class WrapperCounterComponent {
     console.log("Parent: ngAfterContentChecked")
   }
   ngAfterViewInit(){
+    console.log()
     console.log("Parent: ngAfterViewInit")
   }
   ngAfterViewChecked(){
